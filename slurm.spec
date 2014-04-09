@@ -700,7 +700,7 @@ rm -rf $RPM_BUILD_ROOT
 #############################################################################
 
 %if %{slurm_with munge}
-%files munge
+%files slurm-munge
 %defattr(-,root,root)
 %{_libdir}/slurm/auth_munge.so
 %{_libdir}/slurm/crypto_munge.so
